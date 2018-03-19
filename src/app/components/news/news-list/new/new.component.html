@@ -1,0 +1,14 @@
+<!--<h2> News Author : {{_new.author}}</h2>
+<h2> News Title : {{_new.title}}</h2>
+
+<button type="button" (click)="addNew(_new)">Add to Favourite</button>-->
+
+
+<img class="card-img-top" src={{_new.urlToImage}} alt="News Image" style="height:200px ; width:100%">
+      <div class="card-body">
+        <h5 class="card-title">{{_new.title}}</h5>
+        <p class="card-text">{{_new.description}}</p>
+      </div>
+      <div class="card-footer">
+          <button type="button" (click) = "addNew(_new)" class="btn btn-light">Add to fav</button>
+      </div>

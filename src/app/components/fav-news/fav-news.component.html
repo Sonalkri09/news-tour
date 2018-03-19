@@ -1,0 +1,65 @@
+<!--<div *ngFor="let _new of newsList">
+	<h2> News Title : {{_new.title}}</h2>
+
+</div>-->
+
+
+
+
+<div class="container-fluid">
+        <div class="row">
+<div *ngFor="let _new of newsList">
+    <div class="col-sm-4" >
+        <div class="card " style="width:400px">
+            <img class="card-img-top" src="{{_new.urlToImage}}" alt="Card image"  style="height:200px ; width:100%">
+            <div class="card-body">
+              <h4 class="card-title">{{_new.title}}</h4>
+              <p class="card-text"> {{_new.description}}</p>
+              <button (click)="deleteFavourite(_new)" type="button" class="btn btn-danger" >Remove from Favourites </button>
+            </div>
+          </div>
+          <br>
+      </div>
+ </div>
+</div>
+
+
+<!--<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+				<div class="row">
+				<div class="col-sm-4" ></div>
+				
+				<div class="col-sm-4" >
+			<h1>Manage your favourites</h1> 
+		  <button class="btn btn-primary" type="button" (click)="showFavourites()">View favourites</button>
+		  
+			</div>
+			<div class="col-sm-4" ></div>
+			</div>
+			
+			
+		</div>
+	  </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+<div *ngFor="let favourite of favourites;let i=index">
+    <div class="col-sm-4" >
+        <div class="card " style="width:400px">
+            <img class="card-img-top" src="http://image.tmdb.org/t/p/w185{{favourite.poster_path}}" alt="Card image"  style="height:290px ; width:100%">
+            <div class="card-body">
+              <h4 class="card-title">{{favourite.title}}</h4>
+              <p class="card-text"> {{favourite.overview}}</p>
+              <button (click)="deleteFavourite(i)" type="button" class="btn btn-danger" >Remove from Favourites </button>
+            </div>
+          </div>
+          <br>
+
+
+</div>
+</div>
+</div>-->
+
+
+

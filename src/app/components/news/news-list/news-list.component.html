@@ -1,0 +1,18 @@
+
+
+<!--<div *ngFor="let _new of news">
+	
+<app-new [_new]="_new"></app-new>
+</div>-->
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-4"  *ngFor="let _new of news">
+          <div class="card-group" >
+              <div class="card">
+                <app-new [_new]="_new"></app-new>
+              </div>      
+           </div>
+      </div>
+  </div>  
+</div>
